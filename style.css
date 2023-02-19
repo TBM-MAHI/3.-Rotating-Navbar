@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Philosopher&family=Poppins:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #333;
+    background-color: grey;
     margin: 0;
     overflow-x: hidden;/* horizontaly scolling hidden  */ 
 }
-.container{
-     /* This IS THE DEFAULT CONTAINER
+ /* This IS THE DEFAULT CONTAINER
         This is UnDoing THE Rotation back to deafult 
         using  the transition: transform property  of
         .container.show-nav {} backwRD */
+.container{
     background-color: antiquewhite;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     padding: 20px;
     transform-origin:top left;
     transition: transform 1.2s linear ;
@@ -29,13 +28,13 @@ body {
 }
 .container.show-nav + nav li{
     transform: translateX(0);
-    transition-delay: 0.3s;
+    transition-delay: 1s;
 
 }
 .container.show-nav .circle{
     /*rotate the circle to make the Close btn
     Visible*/
-   transform: rotate(-60deg);
+   transform: rotate(-70deg);
    transition: transform 0.9s linear;
 }
 .circle-container{
@@ -48,9 +47,9 @@ body {
     height: 200px;
     width: 200px;
     border: 2px solid rgb(113, 58, 38);
-    border-radius: 100%;
+    border-radius: 50%;
     position: relative;
-    /* transition: transform 0.9s linear; */
+    transition: transform 0.9s linear;
 }
 .circle button{
     cursor: pointer;
@@ -65,13 +64,13 @@ body {
     font-size: 30px;
 }
 .circle button:focus{
-    outline: none;
+    /* outline: none; */
 }
 .circle button#open{
-    left:73%;
+    left:60%;
 }
 .circle button#close{
-    top:73%;
+    top:60%;
     transition: transform 0.6s linear;
     transform: rotate(90deg);
     transform-origin: top left;
@@ -80,7 +79,7 @@ body {
 .content{
     margin: 100px auto;
     max-width: 1000px;
-  
+    overflow: hidden;
 }
 .content h1{
     margin: 0;
@@ -98,8 +97,14 @@ body {
     line-height: 1.6;
 }
 .content img{
-    max-width: 100%;
-    height: 500px;
+    max-width: 50%;
+    margin: 20px 0;
+    border: 3px solid chocolate;
+    border-radius: 5px;
+    box-shadow: 0 0 5px chocolate;
+    /* max-height: 1000px; */
+  
+   
 }
 nav{
     position: fixed;
@@ -113,10 +118,10 @@ nav ul{
 }
 nav ul li{
     text-transform: uppercase;
-    color: white;
+    color: coral;
     margin: 50px 0px;
     transform: translateX(-100%);
-    transition: transform 1.1s ease-in-out;
+    transition: transform 1s ease-in;
 }
 nav ul li i{
     font-size: 25px;
@@ -128,19 +133,28 @@ nav ul li+li{
 }
 nav ul li+li+li{
     margin-left: 30px;
+    transform: translateX(-250%);
 }
 nav a{
-    color: white;
+    color: coral;
     text-decoration: none;
-    /* transition: all 0.6s; */
+   
 }
-nav a:hover{
+nav li:hover{
+    color: coral;
+    font-weight: 800;
+}
+p a{
+    text-decoration: none;
     color: #FF7979;
-    font-weight: bold;
 }
 footer{
-    font-weight: 600;
+    display: flex;
+    height: 50px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
     margin: 0px;
-    color: #333;
+    color:bisque;
     text-align: center;
 }
