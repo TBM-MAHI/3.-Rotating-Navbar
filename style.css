@@ -96,15 +96,23 @@ body {
     color: #333;
     line-height: 1.6;
 }
-.content img{
-    max-width: 50%;
-    margin: 20px 0;
+div.image-div {
+    max-width: 400px;
+}
+div.image-div img{
+    max-width: 100%;
+    margin: 20px 0 0 0;
     border: 3px solid chocolate;
     border-radius: 5px;
-    box-shadow: 0 0 5px chocolate;
-    /* max-height: 1000px; */
-  
-   
+    box-shadow: 0 0 5px #d2691e;
+}
+
+div.image-div figcaption{
+    font-size: 0.8rem;
+    font-style: italic;
+    margin: 0 0 15px;
+    text-align: center;
+    color: rgba(210, 105, 30,0.8);
 }
 nav{
     position: fixed;
@@ -156,5 +164,4 @@ footer{
     align-items: center;
     margin: 0px;
     color:bisque;
-    text-align: center;
 }
