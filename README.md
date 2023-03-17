@@ -1,5 +1,5 @@
-### A Simple Webpage with a rotating Navigation Bar made with Jvascrpit, HTML and CSS. 
+### A Simple Webpage with a rotating Navigation Bar made with Javascrpit, HTML and CSS. 
 
-Live preivier [here].
+Live preview [here].
 
-[here]: < >
+[here]: <https://Rotating-Navbar.tasnimulmahi.repl.co>
