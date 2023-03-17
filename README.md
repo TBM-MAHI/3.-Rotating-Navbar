@@ -2,7 +2,9 @@
 
 Live preview [here].
 
+
+
+![](https://i.imgur.com/7NVWHNU.mp4)
+
 [here]: <https://Rotating-Navbar.tasnimulmahi.repl.co>
 
-
-![](https://github.com/TBM-MAHI/Rotating-Navbar/gig.gif)
